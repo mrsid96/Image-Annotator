@@ -1,0 +1,27 @@
+This is an image annotation script. 
+Basically it highlights section of the images for which would be annotated.
+
+Arguments expected from the class:
+1. annotatorMap (required)
+2. imageId (required)
+3. canvasId (optional)
+4. tableId (optional)
+5. annotateColor (optional)
+6. annotateOpacity (optional)
+
+"imageId", "canvasId", and "tableId" are basically the "id" of the HTML elements.
+"annotateColor" - it expects a hex color code, passed as string
+"annotateOpacity" - it expects a floating point number, 1.0 being solid, and 0.0 being complete transparent.
+
+"annotatorMap" is basically a JSON Array which expects objects in the below format
+
+{
+    rawText: "Job Purpose",
+    coordinates: [
+        { x: 10, y: 10 }, { x: 80, y: 10 },
+        { x: 10, y: 40 }, { x: 80, y: 40 }
+    ]
+}
+
+Here, rawText is the display text for the annotation, which when hovered should highlight on image
+and coordinates are [point1, point2, point3, point4].

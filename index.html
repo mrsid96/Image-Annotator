@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+    <script src="./imageBorderHover.js"></script>
+    <style>
+        .defaultTable {
+            float: right;
+        }
+
+        .defaultTableItem {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="annotateImage"
+        src="https://images.template.net/wp-content/uploads/2017/01/17001629/Sample-Word-Document-Template.jpg" />
+    <script>
+        new ImageBorderHover({
+            imageId: "annotateImage"
+        });
+    </script>
+</body>
+
+</html>
